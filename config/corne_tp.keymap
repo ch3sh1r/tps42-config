@@ -64,7 +64,7 @@
             label = "MACRO_EMAIL_QQ";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N7 &kp N1 &kp N4 &kp N4 &kp N4 &kp N8 &kp N1 &kp N6 &kp N8 &kp AT &kp Q &kp Q &kp DOT &kp C &kp O &kp M>;
+            bindings = <&kp S &kp U &kp R &kp I &kp A &kp R &kp I &kp B &kp E &kp I &kp R &kp O &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
         };
     };
 
