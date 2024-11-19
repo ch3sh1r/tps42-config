@@ -99,10 +99,10 @@
         MouseTP_layer {
             label = "TP";
             bindings = <
-&none  &none  &none  &none  &none      &none        &none      &none      &msc SCRL_UP    &none  &none  &none
-&none  &none  &none  &none  &none      &none        &none      &none      &msc SCRL_DOWN  &none  &none  &none
-&none  &none  &none  &none  &none      &none        &none      &none      &none           &none  &none  &none
-                     &to 0  &mkp LCLK  &mkp RCLK    &mkp RCLK  &mkp LCLK  &none
+&none  &none  &none  &none  &none      &macro_email_q    &none      &none      &msc SCRL_UP    &none  &none  &none
+&none  &none  &none  &none  &none      &none             &none      &none      &msc SCRL_DOWN  &none  &none  &none
+&none  &none  &none  &none  &none      &none             &none      &none      &none           &none  &none  &none
+                     &to 0  &mkp LCLK  &mkp RCLK         &mkp RCLK  &mkp LCLK  &none
             >;
         };
     };
