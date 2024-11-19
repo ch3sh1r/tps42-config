@@ -1,10 +1,10 @@
 #include <behaviors/mouse_keys.dtsi>
+#include "include/mouse_tp.dtsi"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
-#include "include/mouse_tp.dtsi"
 
 #define DEFAULT 0
 #define NUMBER  1
@@ -108,49 +108,49 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&lt 3 ESC  &kp Q  &kp W  &kp E        &kp R        &kp T              &kp Y          &kp U        &kp I        &kp O         &kp P        &kp BACKSPACE
-&kp TAB    &kp A  &kp S  &kp D        &kp F        &kp G              &kp H          &kp J        &kp K        &kp L         &kp SEMI     &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C        &kp V        &kp B              &kp N          &kp M        &lt 4 COMMA  &lt 3 PERIOD  &lt 3 SLASH  &kp RSHFT
-                         &lt 2 LCTRL  &lt 1 SPACE  &kp RIGHT_COMMAND  &kp BACKSPACE  &lt 1 ENTER &none
+&lt 3 ESC  &kp Q  &kp W  &kp E        &kp R        &kp T                &kp Y          &kp U        &kp I        &kp O         &kp P        &kp BACKSPACE
+&kp TAB    &kp A  &kp S  &kp D        &kp F        &kp G                &kp H          &kp J        &kp K        &kp L         &kp SEMI     &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C        &kp V        &kp B                &kp N          &kp M        &lt 4 COMMA  &lt 3 PERIOD  &lt 3 SLASH  &kp RSHFT
+                         &lt 2 LCTRL  &lt 1 SPACE  &kp RIGHT_COMMAND    &kp BACKSPACE  &lt 1 ENTER  &none
             >;
         };
 
         number_layer {
             label = "NUMBER";
             bindings = <
-&none  &kp TAB            &kp N7  &kp N8   &kp N9  &kp EQUAL  &kp DOLLAR            &euro           &kp UP_ARROW    &trans    &trans             &none
-&none  &kp DOUBLE_QUOTES  &kp N4  &kp N5   &kp N6  &kp PLUS   &kp LA(LS(NUMBER_2))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp LALT  &kp RIGHT_CONTROL  &none
-&none  &kp N0             &kp N1  &kp N2   &kp N3  &kp DOT    &trans                &trans          &trans          &trans    &trans             &none
-                                  &kp TAB  &kp N0  &trans     &trans                &trans &none
+&none  &kp TAB            &kp N7  &kp N8   &kp N9  &kp EQUAL    &kp DOLLAR            &euro           &kp UP_ARROW    &trans           &trans             &none
+&none  &kp DOUBLE_QUOTES  &kp N4  &kp N5   &kp N6  &kp PLUS     &kp LA(LS(NUMBER_2))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_CONTROL  &none
+&none  &kp N0             &kp N1  &kp N2   &kp N3  &kp DOT      &trans                &trans          &trans          &trans           &trans             &none
+                                  &kp TAB  &kp N0  &trans       &trans                &trans          &none
             >;
         };
 
         fn_layer {
             label = "FN";
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &kp F10  &kp F11  &kp F12  &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&sys_reset    &none         &kp F7   &kp F8   &kp F9   &out OUT_USB  &out OUT_USB  &none         &none         &none         &none         &sys_reset
-&none         &none         &kp F4   &kp F5   &kp F6   &out OUT_BLE  &out OUT_BLE  &none         &none         &none         &none         &none
-                                     &kp F1   &kp F2   &kp F3        &none         &none &none
+&bt BT_SEL 0  &bt BT_SEL 1  &kp F10  &kp F11  &kp F12  &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&sys_reset    &none         &kp F7   &kp F8   &kp F9   &out OUT_USB    &out OUT_USB  &none         &none         &none         &none         &sys_reset
+&none         &none         &kp F4   &kp F5   &kp F6   &out OUT_BLE    &out OUT_BLE  &none         &none         &none         &none         &none
+                                     &kp F1   &kp F2   &kp F3          &none         &none         &none
             >;
         };
 
         MouseTP_layer {
             label = "TP";
             bindings = <
-&none  &none  &none  &none  &none      &none      &none      &none      &kp UP_ARROW    &none      &none  &none
-&none  &none  &none  &none  &none      &none      &none      &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &none  &none
-&none  &none  &none  &none  &none      &none      &none      &none      &none           &none      &none  &none
-                     &to 0  &mkp LCLK  &mkp RCLK  &mkp RCLK  &mkp LCLK &none
+&none  &none  &none  &none  &none      &none        &none      &none      &kp UP_ARROW    &none      &none  &none
+&none  &none  &none  &none  &none      &none        &none      &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &none  &none
+&none  &none  &none  &none  &none      &none        &none      &none      &none           &none      &none  &none
+                     &to 0  &mkp LCLK  &mkp RCLK    &mkp RCLK  &mkp LCLK  &none
             >;
         };
 
         navigation {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans           &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans &none
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans           &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans          &none
             >;
         };
     };
