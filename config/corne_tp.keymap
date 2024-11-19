@@ -17,25 +17,25 @@
 
         leftParet {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <6 7>;
+            key-positions = <7 8>;
             layers = <0>;
         };
 
         rightParet {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <7 8>;
+            key-positions = <8 9>;
             layers = <0>;
         };
 
         minusCombo {
             bindings = <&kp MINUS>;
-            key-positions = <32 33>;
+            key-positions = <38 39>;
             layers = <0>;
         };
 
         capslock {
             bindings = <&caps_word>;
-            key-positions = <4 5>;
+            key-positions = <4 6>;
             layers = <0>;
         };
 
@@ -44,11 +44,6 @@
             key-positions = <1 2 3>;
             layers = <0>;
             timeout-ms = <40>;
-        };
-
-        apost {
-            bindings = <&kp APOSTROPHE>;
-            key-positions = <14 15>;
         };
     };
 
