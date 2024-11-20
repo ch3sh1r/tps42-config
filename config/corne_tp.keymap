@@ -55,9 +55,43 @@
 #else
   #define U_TOG_TP_SET &none
 #endif  // HAS_MOUSE_TP
-
-// Disable line-wrap in your editor to see a "visualization" of the key layouts
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        leftParet {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <7 8>;
+            layers = <0>;
+        };
+
+        rightParet {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <8 9>;
+            layers = <0>;
+        };
+
+        minusCombo {
+            bindings = <&kp MINUS>;
+            key-positions = <38 39>;
+            layers = <0>;
+        };
+
+        capslock {
+            bindings = <&caps_word>;
+            key-positions = <4 6>;
+            layers = <0>;
+        };
+
+        printscreen {
+            bindings = <&kp LG(LS(N5))>;
+            key-positions = <1 2 3>;
+            layers = <0>;
+            timeout-ms = <40>;
+        };
+    };
+// Disable line-wrap in your editor to see a "visualization" of the key layouts
+ {
 
   keymap {
     compatible = "zmk,keymap";
