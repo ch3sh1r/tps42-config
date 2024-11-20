@@ -1,5 +1,4 @@
 #include <behaviors/mouse_keys.dtsi>
-#include <config/include/mouse_tp.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -9,8 +8,8 @@
 #define DEFAULT 0
 #define NUMBER  1
 #define FN  2
-#define HOTKEY  3
-
+#define TP  3
+  #include "include/mouse_tp.dtsi"
 / {
     combos {
         compatible = "zmk,combos";
