@@ -16,78 +16,34 @@
 #include <behaviors/mouse_keys.dtsi>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        leftParet {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <7 8>;
-            layers = <0>;
-        };
-
-        rightParet {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <8 9>;
-            layers = <0>;
-        };
-
-        minusCombo {
-            bindings = <&kp MINUS>;
-            key-positions = <38 39>;
-            layers = <0>;
-        };
-
-        capslock {
-            bindings = <&caps_word>;
-            key-positions = <4 6>;
-            layers = <0>;
-        };
-
-        printscreen {
-            bindings = <&kp LG(LS(N5))>;
-            key-positions = <1 2 3>;
-            layers = <0>;
-            timeout-ms = <40>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
         Base_layer {
             bindings = <
-     &lt 3 ESC                &kp Q                    &kp W                    &kp E                    &kp R                    &kp T                         &kp Y                    &kp U                    &kp I                    &kp O                    &kp P                    &kp BSPC
-     &kp TAB                &kp A                    &kp S                    &kp D                    &kp F                    &kp G                         &kp H                    &kp J                    &kp K                    &kp L                    &kp SEMI                 &kp SQT
-     &kp LSHFT                &kp Z                    &kp X                    &kp C                    &kp V                    &kp B                         &kp N                    &kp M                    &kp COMMA                &kp DOT                  &kp SLASH                &kp ESC
-                                                                                &lt 2 LCTRL              &lt 1 SPACE              &kp RIGHT_COMMAND             &kp BACKSPACE            &lt 1 ENTER              &lt 3 RCTRL 
+&lt 3 ESC  &kp Q  &kp W  &kp E        &kp R        &kp T              &kp Y          &kp U        &kp I       &kp O    &kp P      &kp BSPC
+&kp TAB    &kp A  &kp S  &kp D        &kp F        &kp G              &kp H          &kp J        &kp K       &kp L    &kp SEMI   &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C        &kp V        &kp B              &kp N          &kp M        &kp COMMA   &kp DOT  &kp SLASH  &kp ESC
+                         &lt 2 LCTRL  &lt 1 SPACE  &kp RIGHT_COMMAND  &kp BACKSPACE  &lt 1 ENTER  &lt 3 RCTRL 
             >;
         };
 
 
         Lower_layer {
             bindings = <
-     &trans                   &none                    &kp N7                   &kp N8                   &kp N9                   &kp EQUAL                     &kp DOLLAR               &none                    &kp UP_ARROW             &trans                   &trans                   &trans
-     &trans                   &kp DOUBLE_QUOTES        &kp N4                   &kp N5                   &kp N6                   &kp PLUS                      &none                    &kp LEFT_ARROW           &kp DOWN_ARROW           &kp RIGHT_ARROW  &none   &none                    &trans
-     &trans                   &kp N0                   &kp N1                   &kp N2                   &kp N3                   &kp DOT                       &trans                   &trans                   &trans                   &trans                   &trans                   &trans
-                                                                                &trans                   &trans                   &trans                        &trans                    &trans                  &trans
+&trans  &none              &kp N7  &kp N8  &kp N9  &kp EQUAL  &kp DOLLAR  &none           &kp UP_ARROW    &trans           &trans  &trans
+&trans  &kp DOUBLE_QUOTES  &kp N4  &kp N5  &kp N6  &kp PLUS   &none       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &none
+&trans  &kp N0             &kp N1  &kp N2  &kp N3  &kp DOT    &trans      &trans          &trans          &trans           &trans  &trans
+                                   &trans  &trans  &trans     &trans      &trans          &trans
             >;
         };
 
         MouseKeys_layer {
             bindings = <
-     &tog MOUSE_TP_SET             &tog MOUSE_TP_SET             &none                    &mmv MOVE_UP             &msc SCRL_UP             &none                         &none                    &msc SCRL_UP             &mmv MOVE_UP             &none                    &tog MOUSE_TP_SET              &tog MOUSE_TP_SET
-     &trans                   &none                    &mmv MOVE_LEFT           &mmv MOVE_DOWN           &mmv MOVE_RIGHT          &none                         &none                    &mmv MOVE_LEFT           &mmv MOVE_DOWN           &mmv MOVE_RIGHT          &none                     &trans
-     &trans                   &none                    &none                    &none                    &msc SCRL_DOWN           &none                         &none                    &msc SCRL_DOWN           &none                    &none                    &trans                    &trans
-                                                                                &mkp MCLK                &mkp LCLK                &mkp RCLK                     &mkp MCLK                &mkp LCLK                &mkp RCLK
-            >;
-        };
-
-        MouseTP_layer {
-            bindings = <
-     &tog MOUSE_TP_SET             &tog MOUSE_TP_SET             &trans                   &trans                   &msc SCRL_UP             &trans                        &trans                   &trans                   &trans                   &trans                   &tog MOUSE_TP_SET              &tog MOUSE_TP_SET
-     &trans                   &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                   &trans                   &trans                    &trans
-     &trans                   &trans                   &trans                   &trans                   &msc SCRL_DOWN           &trans                        &bt BT_CLR               &bt BT_SEL 0             &bt BT_SEL 1             &bt BT_SEL 2             &bt BT_SEL 3              &trans
-                                                                                &mkp MCLK                &mkp LCLK                &mkp RCLK                     &none                    &none                    &none
+&tog MOUSE_TP_SET  &tog MOUSE_TP_SET  &none           &mmv MOVE_UP    &msc SCRL_UP     &msc SCRL_DOWN  &none      &msc SCRL_UP    &mmv MOVE_UP    &none            &tog MOUSE_TP_SET  &tog MOUSE_TP_SET
+&trans             &none              &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none           &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none              &trans
+&bt BT_CLR         &bt BT_SEL 0       &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3     &none           &none      &none           &msc SCRL_DOWN  &none            &none              &trans
+                                                      &mkp MCLK       &mkp LCLK        &mkp RCLK       &mkp MCLK  &mkp LCLK       &mkp RCLK
             >;
         };
 
