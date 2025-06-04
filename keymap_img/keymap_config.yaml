@@ -180,12 +180,9 @@ parse_config:
     '&mmv MOVE_DOWN': Mouse ↓
     '&mmv MOVE_LEFT': Mouse ←
     '&mmv MOVE_RIGHT': Mouse →
-    '&mo 2': Mouse
 
   skip_binding_parsing: false
   zmk_keycode_map:
-    BSPC: '⌫'
-    DEL: '⌦'
     AMPERSAND: '&'
     AMPS: '&'
     APOS: .
@@ -252,28 +249,12 @@ parse_config:
     UNDER: _
     UNDERSCORE: _
     LCTRL: ⌃
-    LALT: ⎇
-    LGUI: ⌘
-    LSHFT: ⇧
-    RCTRL: ⌃
-    LEFT_CONTROL: ⌃
-    LEFT_ALT: ⎇
-    LEFT_GUI: ⌘
-    LEFT_SHFT: ⇧
-    RALT: ⎇
-    RGUI: ⌘
-    RSHFT: ⇧
-    RIGHT_CONTROL: ⌃
-    RIGHT_ALT: ⎇
-    RIGHT_GUI: ⌘
-    RIGHT_SHFT: ⇧
     LEFT: ←
     RIGHT: →
     UP: ↑
     DOWN: ↓
     TAB: ↹
     RETURN: '⏎'
-    ESCAPE: '⎋'
     C_REWIND: '⏮'
     C_FAST_FORWARD: '⏭'
     C_PAUSE: '⏯'
