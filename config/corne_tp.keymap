@@ -54,8 +54,8 @@
             layers = <0>;
         };
 
-        colon {
-            bindings = <&kp COLON>;
+        caret {
+            bindings = <&kp CARET>;
             key-positions = <20 21>;
             layers = <0>;
         };
