@@ -8,7 +8,7 @@
 #define HAS_MOUSE_TP
 
 #define DEF 0
-#define SYM 1
+#define FNN 1
 #define NAV 2
 
 #include "include/mouse_tp.dtsi"
@@ -20,15 +20,8 @@
 #include <behaviors/mouse_keys.dtsi>
 
 / {
-        combos {
+    combos {
         compatible = "zmk,combos";
-
-        semcol {
-            bindings = <&kp SEMI>;
-            key-positions = <32 33>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
 
         parentheses_left {
             bindings = <&kp LEFT_PARENTHESIS>;
@@ -108,7 +101,7 @@
             layers = <0>;
         };
 
-        Pipe {
+        pipe {
             bindings = <&kp PIPE>;
             key-positions = <27 26>;
             layers = <0>;
@@ -123,6 +116,12 @@
         dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <15 20>;
+            layers = <0>;
+        };
+
+        hash {
+            bindings = <&kp hash>;
+            key-positions = <32 33>;
             layers = <0>;
         };
 
@@ -164,25 +163,25 @@
             bindings = <
 &kp TAB     &kp Q  &kp W  &kp E      &kp R     &kp T          &kp Y          &kp U     &kp I      &kp O    &kp P              &kp BSPC
 &kp ESC     &kp A  &kp S  &kp D      &kp F     &kp G          &kp H          &kp J     &kp K      &kp L    &lt NAV SEMICOLON  &kp SQT
-&kp LSHIFT  &kp Z  &kp X  &kp C      &kp V     &kp B          &kp N          &kp M     &kp COMMA  &kp DOT  &lt SYM FSLH       &kp RCTRL
-                          &kp LMETA  &kp LCTL  &lt SYM SPACE  &lt NAV ENTER  &kp RALT  &kp RMETA
+&kp LSHIFT  &kp Z  &kp X  &kp C      &kp V     &kp B          &kp N          &kp M     &kp COMMA  &kp DOT  &lt FNN FSLH       &kp RCTRL
+                          &kp LMETA  &kp LCTL  &lt FNN SPACE  &lt NAV ENTER  &kp RALT  &kp RMETA
             >;
         };
 
-        sym {
+        fnn {
             bindings = <
-&trans      &kp N1    &kp N2      &kp N3      &kp N4        &kp N5        &kp N6     &kp N7    &kp N8     &kp N9     &kp N0         &kp BSPC
-&kp C_PREV  &kp C_PP  &kp C_NEXT  &kp C_MUTE  &kp C_VOL_UP  &kp C_VOL_DN  &kp EQUAL  &kp DLLR  &kp PRCNT  &kp CARET  &kp BACKSLASH  &kp PSCRN
-&trans      &trans    &trans      &trans      &kp C_BRI_UP  &kp C_BRI_DN  &kp MINUS  &kp EXCL  &kp AT     &kp HASH   &kp PIPE       &kp TILDE
-                                  &trans      &trans        &trans        &trans     &trans    &trans
+&kp PSCRN   &kp N1    &kp N2      &kp N3      &kp N4        &kp N5        &kp N6        &kp N7        &kp N8  &kp N9   &kp N0   &kp BSPC
+&kp F2      &kp F2    &kp F3      &kp F4      &kp F5        &kp F6        &kp F7        &kp F8        &kp F9  &kp F10  &kp F11  &kp F12
+&kp C_PREV  &kp C_PP  &kp C_NEXT  &kp C_MUTE  &kp C_VOL_UP  &kp C_VOL_DN  &kp C_BRI_UP  &kp C_BRI_DN  &trans  &trans   &trans   &trans
+                                  &trans      &trans        &trans        &trans        &trans        &trans
             >;
         };
 
         nav {
             bindings = <
-&trans       &kp PG_UP     &kp PG_DN     &kp INS       &kp DEL       &trans     &trans        &msc SCRL_UP    &msc SCRL_DOWN  &trans     &trans  &trans
-&trans       &sk LEFT_GUI  &sk LALT      &sk LSHIFT    &sk LCTRL     &trans     &kp LEFT      &kp DOWN        &kp UP          &kp RIGHT  &trans  &trans
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans     &trans        &trans          &kp END         &trans     &trans  &trans
+&trans       &trans        &trans        &trans        &trans        &trans     &msc SCRL_UP  &msc SCRL_DOWN  &trans     &trans     &trans  &trans
+&trans       &sk LMETA     &sk LALT      &sk LSHIFT    &sk LCTRL     &trans     &kp LEFT      &kp DOWN        &kp UP     &kp RIGHT  &trans  &trans
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans     &kp PG_UP     &kp PG_DN       &kp HOME   &kp END    &trans  &trans
                                          &mkp RCLK     &mkp MCLK     &mkp LCLK  &mkp LCLK     &mkp MCLK       &mkp RCLK
             >;
         };
