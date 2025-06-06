@@ -228,6 +228,7 @@ parse_config:
     PIPE2: '|'
     PLUS: +
     POUND: '#'
+    HASH: '#'
     PRCNT: '%'
     QMARK: '?'
     QUESTION: '?'
