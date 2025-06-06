@@ -120,7 +120,7 @@
         };
 
         hash {
-            bindings = <&kp hash>;
+            bindings = <&kp HASH>;
             key-positions = <32 33>;
             layers = <0>;
         };

@@ -281,6 +281,7 @@ path {
       <g class="combo combopos-5">
         <rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
         <text x="168" y="88" class="combo tap" style="white-space: pre;">`</text>
+        <text x="168" y="76" class="combo shifted" style="white-space: pre;">~</text>
       </g>
       <g class="combo combopos-6">
         <rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
@@ -298,23 +299,19 @@ path {
         <rect rx="6" ry="6" x="658" y="18" width="28" height="26" class="combo"/>
         <text x="672" y="32" class="combo tap" style="white-space: pre;">&gt;</text>
       </g>
-      <g class="combo combopos-10" transform="matrix(1, 0, 0, 1, 4.426473, 7.150455)">
+      <g class="combo combopos-10" transform="matrix(1, 0, 0, 1, -7.246758, 5.797363)">
         <path d="M420,147 l-149,0" class="combo"/>
         <path d="M420,147 l149,0" class="combo"/>
         <rect rx="6" ry="6" x="406" y="134" width="28" height="26" class="combo"/>
-        <text x="420" y="147" class="combo tap" style="white-space: pre;"> </text>
         <text x="420" y="136" class="combo shifted" style="white-space: pre;">_</text>
-        <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: &quot;Arial&quot;, sans-serif; font-size: 28px;" x="458.107" y="139.591"> </text>
-        <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: &quot;Arial&quot;, sans-serif; font-size: 28px;" x="444.487" y="214.5"> </text>
-        <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: &quot;Arial&quot;, sans-serif; font-size: 28px;" x="403.287" y="208.031"> </text>
       </g>
-      <g class="combo combopos-11" transform="matrix(1, 0, 0, 1, 2.383485, -7.150455)">
+      <g class="combo combopos-11" transform="matrix(1, 0, 0, 1, -4.348089, -2.415605)">
         <path d="M420,35 l-149,0" class="combo"/>
         <path d="M420,35 l149,0" class="combo"/>
         <rect rx="6" ry="6" x="406" y="22" width="28" height="26" class="combo"/>
         <text x="420" y="35" class="combo tap" style="white-space: pre;">+</text>
       </g>
-      <g class="combo combopos-12" transform="matrix(1, 0, 0, 1, -4.085975, -11.576928)">
+      <g class="combo combopos-12" transform="matrix(1, 0, 0, 1, 3.864968, -3.381847)">
         <path d="M420,91 l-149,0" class="combo"/>
         <path d="M420,91 l149,0" class="combo"/>
         <rect rx="6" ry="6" x="406" y="78" width="28" height="26" class="combo"/>
@@ -325,13 +322,13 @@ path {
         <rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
         <text x="168" y="144" class="combo tap" style="white-space: pre;">|</text>
       </g>
-      <g class="combo combopos-14" transform="matrix(1, 0, 0, 1, 2.383485, -20.77037)">
+      <g class="combo combopos-14" transform="matrix(1, 0, 0, 1, -4.348089, -21.740444)">
         <path d="M420,28 l-205,0" class="combo"/>
         <path d="M420,28 l205,0" class="combo"/>
         <rect rx="6" ry="6" x="406" y="15" width="28" height="26" class="combo"/>
         <text x="420" y="28" class="combo tap" style="white-space: pre;">*</text>
       </g>
-      <g class="combo combopos-15" transform="matrix(1, 0, 0, 1, -3.404979, -22.47286)">
+      <g class="combo combopos-15" transform="matrix(1, 0, 0, 1, 4.83121, -20.7742)">
         <path d="M420,84 l-205,0" class="combo"/>
         <path d="M420,84 l205,0" class="combo"/>
         <rect rx="6" ry="6" x="406" y="71" width="28" height="26" class="combo"/>
@@ -339,21 +336,21 @@ path {
       </g>
       <g class="combo combopos-16">
         <rect rx="6" ry="6" x="658" y="130" width="28" height="26" class="combo"/>
-        <text x="672" y="144" class="combo tap" style="white-space: pre;">hash</text>
+        <text x="672" y="144" class="combo tap" style="white-space: pre;">#</text>
       </g>
-      <g class="combo combopos-17" transform="matrix(1, 0, 0, 1, 3.745476, -11.576927)">
+      <g class="combo combopos-17" transform="matrix(1, 0, 0, 1, -6.763694, -8.213057)">
         <path d="M420,140 l-205,0" class="combo"/>
         <path d="M420,140 l205,0" class="combo"/>
         <rect rx="6" ry="6" x="406" y="127" width="28" height="26" class="combo"/>
         <text x="420" y="140" class="combo tap" style="white-space: pre;">!</text>
       </g>
-      <g class="combo combopos-18" transform="matrix(1, 0, 0, 1, -4.085975, -1.021494)">
+      <g class="combo combopos-18" transform="matrix(1, 0, 0, 1, 4.348089, 13.527387)">
         <path d="M420,98 l-93,0" class="combo"/>
         <path d="M420,98 l93,0" class="combo"/>
         <rect rx="6" ry="6" x="406" y="85" width="28" height="26" class="combo"/>
         <text x="420" y="98" class="combo tap" style="white-space: pre;">&amp;</text>
       </g>
-      <g class="combo combopos-19" transform="matrix(1, 0, 0, 1, 4.76697, 19.748877)">
+      <g class="combo combopos-19" transform="matrix(1, 0, 0, 1, -6.763693, 17.875475)">
         <path d="M420,154 l-93,0" class="combo"/>
         <path d="M420,154 l93,0" class="combo"/>
         <rect rx="6" ry="6" x="406" y="141" width="28" height="26" class="combo"/>
