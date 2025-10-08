@@ -155,7 +155,7 @@
             layers = <0>;
         };
 
-        tilde {
+        btclr {
             bindings = <&bt BT_CLR>;
             key-positions = <28 27 26 25>;
             layers = <2>;
