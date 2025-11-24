@@ -11,7 +11,8 @@
 #define FNN 1
 #define NAV 2
 
-#include "include/mouse_tp.dtsi"
+// Disable untill board is fixed
+/* #include "include/mouse_tp.dtsi" */
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
