@@ -154,10 +154,10 @@
 
         base {
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp E      &kp R     &kp T          &kp Y          &kp U      &kp I      &kp O    &kp P              &kp BSPC
-&kp ESC     &kp A  &kp S  &kp D      &kp F     &kp G          &kp H          &kp J      &kp K      &kp L    &lt NAV SEMICOLON  &kp SQT
-&kp LSHIFT  &kp Z  &kp X  &kp C      &kp V     &kp B          &kp N          &kp M      &kp COMMA  &kp DOT  &lt FNN FSLH       &kp RCTRL
-                          &kp LMETA  &kp LALT  &lt FNN SPACE  &lt NAV ENTER  &kp LCTRL  &kp RMETA
+&kp TAB     &kp Q  &kp W       &kp E        &kp R         &kp T      &kp Y      &kp U         &kp I        &kp O       &kp P           &kp BSPC
+&kp ESC     &kp A  &mt LALT S  &mt LCTRL D  &mt LSHIFT F  &kp G      &kp H      &mt J RSHIFT  &mt RMETA K  &mt RALT L  &mt RCTRL SEMI  &kp SQT
+&kp LSHIFT  &kp Z  &kp X       &kp C        &kp V         &kp B      &kp N      &kp M         &kp COMMA    &kp DOT     &kt FSLH        &kp RCTRL
+                               &kp LMETA    &lt FNN TAB   &kp SPACE  &kp ENTER  &lt NAV BSPC  &kp RMETA
             >;
         };
 
@@ -166,15 +166,15 @@
 &kp PSCRN  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6      &kp N7    &kp N8      &kp N9      &kp N0        &kp DEL
 &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &kp F7      &kp F8    &kp F9      &kp F10     &kp F11       &kp F12
 &trans     &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp RCTRL  &kp C_PREV  &kp C_PP  &kp C_NEXT  &kp C_MUTE  &kp C_VOL_UP  &kp C_VOL_DN
-                                 &trans     &trans     &trans     &trans      &trans    &trans
+                                 &trans     &trans     &trans     &trans      &kp DEL   &trans
             >;
         };
 
         nav {
             bindings = <
 &trans      &trans        &trans        &trans        &kp C_BRI_UP  &kp C_BRI_DN  &trans     &trans     &trans    &trans     &trans   &trans
-&trans      &sk LMETA     &sk LALT      &sk LSHIFT    &sk LCTRL     &trans        &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans   &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans        &kp PG_UP  &kp PG_DN  &kp HOME  &kp END    &kp DEL  &kp INS
+&trans      &trans        &trans        &trans        &trans        &trans        &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans   &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans        &kp PG_UP  &kp PG_DN  &kp HOME  &kp END    &trans   &trans
                                         &trans        &trans        &trans        &trans     &trans     &trans
             >;
         };
