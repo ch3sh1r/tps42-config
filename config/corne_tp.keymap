@@ -146,12 +146,6 @@
             key-positions = <14 13>;
             layers = <0>;
         };
-
-        btclr {
-            bindings = <&bt BT_CLR>;
-            key-positions = <28 27 26 25>;
-            layers = <2>;
-        };
     };
 
     keymap {
