@@ -156,7 +156,7 @@
             bindings = <
 &kp TAB     &kp Q  &kp W       &kp E        &kp R         &kp T      &kp Y      &kp U         &kp I        &kp O       &kp P           &kp BSPC
 &kp ESC     &kp A  &mt LALT S  &mt LCTRL D  &mt LSHIFT F  &kp G      &kp H      &mt J RSHIFT  &mt RCTRL K  &mt RALT L  &mt RCTRL SEMI  &kp SQT
-&kp LSHIFT  &kp Z  &kp X       &kp C        &kp V         &kp B      &kp N      &kp M         &kp COMMA    &kp DOT     &kt FSLH        &kp RCTRL
+&kp LSHIFT  &kp Z  &kp X       &kp C        &kp V         &kp B      &kp N      &kp M         &kp COMMA    &kp DOT     &kp FSLH        &kp RCTRL
                                &kp LMETA    &lt FNN TAB   &kp SPACE  &kp ENTER  &lt NAV BSPC  &kp RMETA
             >;
         };
