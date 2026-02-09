@@ -7,6 +7,7 @@
 #define DEF 0
 #define FNN 1
 #define NAV 2
+#define GAM 3
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -163,10 +164,10 @@
 
         fnn {
             bindings = <
-&trans  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6     &kp N7   &kp N8  &kp N9   &kp N0   &trans
-&kp F1  &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &kp F7     &kp F8   &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp PSCRN  &trans     &trans   &trans  &trans   &trans   &trans
-                              &trans     &trans     &trans     &trans  &kp DEL  &trans
+&trans  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6   &kp N7   &kp N8  &kp N9   &kp N0   &trans
+&kp F1  &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &kp F7   &kp F8   &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp PSCRN  &trans   &trans   &trans  &trans   &trans   &trans
+                              &trans     &trans     &trans     &trans   &kp DEL  &trans
             >;
         };
 
@@ -175,7 +176,16 @@
 &trans      &trans        &trans        &trans        &kp C_BRI_UP  &kp C_BRI_DN  &kp C_VOL_UP  &kp C_VOL_DN  &kp C_PREV  &kp C_PP   &kp C_NEXT   &trans
 &bt BT_CLR  &trans        &trans        &trans        &trans        &trans        &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT  &trans       &trans
 &trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans        &kp PG_UP     &kp PG_DN     &kp HOME    &kp END    &trans       &trans
-                                        &trans        &trans        &trans        &trans        &trans        &trans
+                                        &trans        &trans        &trans        &tog GAM      &trans        &trans
+            >;
+        };
+
+        game {
+            bindings = <
+&trans   &kp T           &kp Q  &kp W  &kp E    &kp R      &trans    &trans  &trans  &trans  &trans  &trans
+&kp ESC  &kp LEFT_SHIFT  &kp A  &kp S  &kp D    &kp F      &trans    &trans  &trans  &trans  &trans  &trans
+&trans   &kp LCTRL       &kp Z  &kp X  &kp C    &kp V      &trans    &trans  &trans  &trans  &trans  &trans
+                                &kp I  &kp TAB  &kp SPACE  &tog DEF  &trans  &trans
             >;
         };
     };
