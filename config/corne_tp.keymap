@@ -8,6 +8,7 @@
 #define FNN 1
 #define NAV 2
 #define GAM 3
+#define GAN 4
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -182,10 +183,19 @@
 
         game {
             bindings = <
-&trans   &kp T           &kp Q  &kp W  &kp E    &kp R      &trans    &trans  &trans  &trans  &trans  &trans
-&kp ESC  &kp LEFT_SHIFT  &kp A  &kp S  &kp D    &kp F      &trans    &trans  &trans  &trans  &trans  &trans
-&trans   &kp LCTRL       &kp Z  &kp X  &kp C    &kp V      &trans    &trans  &trans  &trans  &trans  &trans
-                                &kp I  &kp TAB  &kp SPACE  &tog DEF  &trans  &trans
+&trans   &kp T           &kp Q  &kp W  &kp E        &kp R      &trans    &trans  &trans  &trans  &trans  &trans
+&kp ESC  &kp LEFT_SHIFT  &kp A  &kp S  &kp D        &kp F      &trans    &trans  &trans  &trans  &trans  &trans
+&trans   &kp LCTRL       &kp Z  &kp X  &kp C        &kp V      &trans    &trans  &trans  &trans  &trans  &trans
+                                &kp I  &lt GAN TAB  &kp SPACE  &tog DEF  &trans  &trans
+            >;
+        };
+
+        game_fnn {
+            bindings = <
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
