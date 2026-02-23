@@ -15,136 +15,156 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        alt_shift: alt_shift {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_press &kp LSHFT>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp LALT>
+                ;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
-        parentheses_left {
+        combo_layout_switch {
+            key-positions = <5 6>;
+            bindings = <&alt_shift>;
+            layers = <0>;
+        };
+
+        combo_parentheses_left {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <16 15>;
             layers = <0>;
         };
 
-        parentheses_right {
+        combo_parentheses_right {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <19 20>;
             layers = <0>;
         };
 
-        bracket_left {
+        combo_bracket_left {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <3 4>;
             layers = <0>;
         };
 
-        bracket_right {
+        combo_bracket_right {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <8 7>;
             layers = <0>;
         };
 
-        caret {
+        combo_caret {
             bindings = <&kp CARET>;
             key-positions = <20 21>;
             layers = <0>;
         };
 
-        grave {
+        combo_grave {
             bindings = <&kp GRAVE>;
             key-positions = <15 14>;
             layers = <0>;
         };
 
-        brace_left {
+        combo_brace_left {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <27 28>;
             layers = <0>;
         };
 
-        brace_right {
+        combo_brace_right {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <31 32>;
             layers = <0>;
         };
 
-        less_than {
+        combo_less_than {
             bindings = <&kp LESS_THAN>;
             key-positions = <2 3>;
             layers = <0>;
         };
 
-        bigger_than {
+        combo_bigger_than {
             bindings = <&kp GREATER_THAN>;
             key-positions = <8 9>;
             layers = <0>;
         };
 
-        hyphen {
+        combo_hyphen {
             bindings = <&kp MINUS>;
             key-positions = <28 31>;
             layers = <0>;
         };
 
-        plus {
+        combo_plus {
             bindings = <&kp PLUS>;
             key-positions = <4 7>;
             layers = <0>;
         };
 
-        equal {
+        combo_equal {
             bindings = <&kp EQUAL>;
             key-positions = <16 19>;
             layers = <0>;
         };
 
-        pipe {
+        combo_pipe {
             bindings = <&kp PIPE>;
             key-positions = <27 26>;
             layers = <0>;
         };
 
-        astrsk {
+        combo_astrsk {
             bindings = <&kp ASTERISK>;
             key-positions = <3 8>;
             layers = <0>;
         };
 
-        dollar {
+        combo_dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <15 20>;
             layers = <0>;
         };
 
-        hash {
+        combo_hash {
             bindings = <&kp HASH>;
             key-positions = <32 33>;
             layers = <0>;
         };
 
-        excl {
+        combo_excl {
             bindings = <&kp EXCL>;
             key-positions = <27 32>;
             layers = <0>;
         };
 
-        ampersand {
+        combo_ampersand {
             bindings = <&kp AMPERSAND>;
             key-positions = <17 18>;
             layers = <0>;
         };
 
-        underscore {
+        combo_underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <29 30>;
             layers = <0>;
         };
 
-        backslash {
+        combo_backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <21 22>;
             layers = <0>;
         };
 
-        tilde {
+        combo_tilde {
             bindings = <&kp TILDE>;
             key-positions = <14 13>;
             layers = <0>;
@@ -165,10 +185,10 @@
 
         fnn {
             bindings = <
-&trans  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6   &kp N7   &kp N8  &kp N9   &kp N0   &trans
-&kp F1  &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &kp F7   &kp F8   &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp PSCRN  &trans   &trans   &trans  &trans   &trans   &trans
-                              &trans     &trans     &trans     &trans   &kp DEL  &trans
+&trans  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5      &kp N6   &kp N7   &kp N8  &kp N9   &kp N0   &trans
+&trans  &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &alt_shift  &kp F1   &kp F2   &kp F3  &kp F4   &kp F5   &kp F6
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp PSCRN   &kp F7   &kp F8   &kp F9  &kp F10  &kp F11  &kp F12
+                              &trans     &trans     &trans      &trans   &kp DEL  &trans
             >;
         };
 
