@@ -16,8 +16,7 @@
 
 / {
     macros {
-        alt_shift: alt_shift {
-            compatible = "zmk,behavior-macro";
+        ZMK_MACRO(alt_shift,
             wait-ms = <10>;
             tap-ms = <10>;
             bindings
@@ -26,7 +25,7 @@
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp LALT>
                 ;
-        };
+        )
     };
 
     combos {
