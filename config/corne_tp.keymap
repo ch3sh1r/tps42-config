@@ -37,6 +37,18 @@
             layers = <0>;
         };
 
+        combo_term_copy {
+            timeout-ms = <50>;
+            key-positions = <25 27>;
+            bindings = <&kp LC(LS(C))>;
+        };
+
+        combo_term_paste {
+            timeout-ms = <50>;
+            key-positions = <25 28>;
+            bindings = <&kp LC(LS(V))>;
+        };
+
         combo_parentheses_left {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <16 15>;
@@ -61,18 +73,6 @@
             layers = <0>;
         };
 
-        combo_caret {
-            bindings = <&kp CARET>;
-            key-positions = <20 21>;
-            layers = <0>;
-        };
-
-        combo_grave {
-            bindings = <&kp GRAVE>;
-            key-positions = <15 14>;
-            layers = <0>;
-        };
-
         combo_brace_left {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <27 28>;
@@ -82,6 +82,18 @@
         combo_brace_right {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <31 32>;
+            layers = <0>;
+        };
+
+        combo_caret {
+            bindings = <&kp CARET>;
+            key-positions = <20 21>;
+            layers = <0>;
+        };
+
+        combo_grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <15 14>;
             layers = <0>;
         };
 
